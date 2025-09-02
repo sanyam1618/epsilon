@@ -5,151 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Epsilon Factors Reading Group</title>
   <style>
+    /* General page styling */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      background-color: #f8f9fa;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
 
+    /* Header */
     header {
       background-color: #1e3a8a;
       color: white;
       padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
-    #lang-select {
-      padding: 5px;
-      border-radius: 5px;
-      border: none;
-      font-size: 0.9rem;
-    }
-
+    /* Main content */
     main {
       padding: 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
     section {
       background: white;
-      padding: 15px;
-      margin: 15px 0;
+      padding: 20px;
+      margin-bottom: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    h2 {
+    section h2 {
+      margin-top: 0;
       color: #1e3a8a;
+    }
+
+    /* Seminar table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      table-layout: auto; /* Allow flexible column widths */
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #1e3a8a;
+      color: white;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f6ff;
+    }
+
+    tr:hover {
+      background-color: #e8f0ff;
+    }
+
+    /* Make the table scrollable on small screens */
+    .table-container {
+      overflow-x: auto;
+    }
+
+    /* Links */
+    a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 id="title">Epsilon Factors Reading Group</h1>
-    <select id="lang-select">
-      <option value="en">English</option>
-      <option value="fr">Français</option>
-    </select>
+    <h1>Epsilon Factors Reading Group</h1>
   </header>
 
   <main>
+    <!-- About section -->
     <section>
-      <h2 id="about-title">About</h2>
-      <p id="about-text">
-        Welcome to the reading group on epsilon factors. We explore local and global aspects.
+      <h2>About</h2>
+      <p>
+        Welcome to the reading group on epsilon factors. We will explore both local and global aspects, focusing on the arithmetic significance and their relations to L-functions.
       </p>
     </section>
 
+    <!-- Seminar schedule -->
     <section>
-      <h2 id="schedule-title">Schedule</h2>
-      <ul id="schedule-list">
-        <li>Thursday, September 11 - Mladen</li>
+      <h2>Seminar Schedule</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date & Time</th>
+              <th>Speaker</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Introduction to Epsilon Factors and Local Constants</td>
+              <td>Jan 10, 2025 — 14:00</td>
+              <td>Prof. Alice Johnson</td>
+            </tr>
+            <tr>
+              <td>Local-Global Compatibility and the Role of Functional Equations</td>
+              <td>Jan 17, 2025 — 14:00</td>
+              <td>Dr. Bob Smith</td>
+            </tr>
+            <tr>
+              <td>
+                Exploring the Connections Between Epsilon Factors and Galois Representations in the Context of p-adic L-functions
+              </td>
+              <td>Jan 24, 2025 — 14:00</td>
+              <td>Dr. Catherine Dupont</td>
+            </tr>
+            <tr>
+              <td>Applications of Epsilon Factors in the Study of Automorphic Representations</td>
+              <td>Jan 31, 2025 — 14:00</td>
+              <td>Prof. David Lee</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Notes and resources -->
+    <section>
+      <h2>Notes & Resources</h2>
+      <p>
+        Lecture notes and slides will be uploaded here after each session.
+      </p>
+      <ul>
+        <li><a href="#">Session 1 Notes (Coming Soon)</a></li>
+        <li><a href="#">Session 2 Notes (Coming Soon)</a></li>
+        <li><a href="#">Session 3 Notes (Coming Soon)</a></li>
       </ul>
     </section>
-
-    <section>
-      <h2 id="location-title">Location</h2>
-      <p id="location-text">Room 302, Mathematics Department, Paris.</p>
-    </section>
-
-    <section>
-      <h2 id="notes-title">Notes & Resources</h2>
-      <p id="notes-text">
-        Lecture notes and slides will be uploaded here.
-      </p>
-    </section>
   </main>
-
-  <script>
-    // Translation content
-    const translations = {
-      en: {
-        title: "Epsilon Factors Reading Group",
-        aboutTitle: "About",
-        aboutText: "Welcome to the reading group on epsilon factors. We explore local and global aspects.",
-        scheduleTitle: "Schedule",
-        scheduleList: `
-          <li>Session 1 — Introduction — Jan 10</li>
-          <li>Session 2 — Local epsilon factors — Jan 17</li>
-          <li>Session 3 — Global theory — Jan 24</li>
-        `,
-        locationTitle: "Location",
-        locationText: "Room 302, Mathematics Department, Paris.",
-        notesTitle: "Notes & Resources",
-        notesText: "Lecture notes and slides will be uploaded here."
-      },
-      fr: {
-        title: "Groupe de Lecture sur les Facteurs Épsilon",
-        aboutTitle: "À propos",
-        aboutText: "Bienvenue au groupe de lecture sur les facteurs epsilon. Nous explorons les aspects locaux et globaux.",
-        scheduleTitle: "Calendrier",
-        scheduleList: `
-          <li>Séance 1 — Introduction — 10 Jan</li>
-          <li>Séance 2 — Facteurs epsilon locaux — 17 Jan</li>
-          <li>Séance 3 — Théorie globale — 24 Jan</li>
-        `,
-        locationTitle: "Lieu",
-        locationText: "Salle 302, Département de Mathématiques, Paris.",
-        notesTitle: "Notes & Ressources",
-        notesText: "Les notes de cours et les diapositives seront mises en ligne ici."
-      }
-    };
-
-    const langSelect = document.getElementById("lang-select");
-
-    function updateLanguage(lang) {
-      document.getElementById("title").textContent = translations[lang].title;
-      document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-      document.getElementById("about-text").textContent = translations[lang].aboutText;
-      document.getElementById("schedule-title").textContent = translations[lang].scheduleTitle;
-      document.getElementById("schedule-list").innerHTML = translations[lang].scheduleList;
-      document.getElementById("location-title").textContent = translations[lang].locationTitle;
-      document.getElementById("location-text").textContent = translations[lang].locationText;
-      document.getElementById("notes-title").textContent = translations[lang].notesTitle;
-      document.getElementById("notes-text").textContent = translations[lang].notesText;
-
-      localStorage.setItem("selectedLang", lang);
-    }
-
-    // On language change
-    langSelect.addEventListener("change", (e) => {
-      updateLanguage(e.target.value);
-    });
-
-    // Load saved language or default English
-    const savedLang = localStorage.getItem("selectedLang") || "en";
-    langSelect.value = savedLang;
-    updateLanguage(savedLang);
-  </script>
 </body>
 </html>
