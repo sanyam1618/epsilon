@@ -18,20 +18,20 @@
     header {
       background-color: #1e3a8a;
       color: white;
-      padding: 15px 20px;
+      padding: 20px;
       text-align: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
-    /* Main content */
+    /* Main content area with increased width */
     main {
-      padding: 20px;
-      max-width: 900px;
+      padding: 25px;
+      max-width: 1200px; /* Increased width */
       margin: auto;
     }
 
@@ -53,7 +53,7 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
-      table-layout: auto; /* Allow flexible column widths */
+      table-layout: auto; /* Flexible column widths */
     }
 
     th, td {
@@ -91,6 +91,20 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Notes column styling */
+    .notes-link {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .notes-link:hover {
+      background-color: #3b82f6;
+    }
   </style>
 </head>
 <body>
@@ -117,6 +131,7 @@
               <th>Title</th>
               <th>Date & Time</th>
               <th>Speaker</th>
+              <th>Notes</th>
             </tr>
           </thead>
           <tbody>
@@ -124,23 +139,25 @@
               <td>Introduction to Epsilon Factors and Local Constants</td>
               <td>Jan 10, 2025 — 14:00</td>
               <td>Prof. Alice Johnson</td>
+              <td><a href="notes/session1.pdf" class="notes-link">Download</a></td>
             </tr>
             <tr>
               <td>Local-Global Compatibility and the Role of Functional Equations</td>
               <td>Jan 17, 2025 — 14:00</td>
               <td>Dr. Bob Smith</td>
+              <td><a href="notes/session2.pdf" class="notes-link">Download</a></td>
             </tr>
             <tr>
-              <td>
-                Exploring the Connections Between Epsilon Factors and Galois Representations in the Context of p-adic L-functions
-              </td>
+              <td>Exploring the Connections Between Epsilon Factors and Galois Representations in the Context of p-adic L-functions</td>
               <td>Jan 24, 2025 — 14:00</td>
               <td>Dr. Catherine Dupont</td>
+              <td><a href="#" class="notes-link">Coming Soon</a></td>
             </tr>
             <tr>
               <td>Applications of Epsilon Factors in the Study of Automorphic Representations</td>
               <td>Jan 31, 2025 — 14:00</td>
               <td>Prof. David Lee</td>
+              <td><a href="#" class="notes-link">Coming Soon</a></td>
             </tr>
           </tbody>
         </table>
@@ -151,13 +168,8 @@
     <section>
       <h2>Notes & Resources</h2>
       <p>
-        Lecture notes and slides will be uploaded here after each session.
+        PDF lecture notes will be uploaded after each session. You can also access them directly from the table above.
       </p>
-      <ul>
-        <li><a href="#">Session 1 Notes (Coming Soon)</a></li>
-        <li><a href="#">Session 2 Notes (Coming Soon)</a></li>
-        <li><a href="#">Session 3 Notes (Coming Soon)</a></li>
-      </ul>
     </section>
   </main>
 </body>
