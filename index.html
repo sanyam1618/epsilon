@@ -1,123 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Epsilon Factors Reading Group</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        }
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f1f1f1;
-        }
-        .notes ul {
-            list-style: none;
-            padding: 0;
-        }
-        .notes li {
-            margin-bottom: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epsilon Factors Reading Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2d3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+    }
+    #lang-switcher {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: white;
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h1, h2 {
+      color: #2d3e50;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px 0;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Epsilon Factors Reading Group</h1>
-        <p>Exploring local and global epsilon factors</p>
-    </header>
+  <header>
+    <h1 id="title">Epsilon Factors Reading Group</h1>
+    <button id="lang-switcher">FR</button>
+  </header>
 
-    <main>
-        <section>
-            <h2>📅 Schedule</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Topic</th>
-                        <th>Speaker</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Thursday, Sep 11 @ 10h </td>
-                        <td>Introduction</td>
-                        <td>Mladen</td>
-                        <td><a href="#">notes</a></td>
-                    </tr>
-                    
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+  <main>
+    <section>
+      <h2 id="desc">Exploring epsilon factors, local constants, and their role in number theory.</h2>
+    </section>
 
-        <section>
-            <h2>Venue</h2>
-            <p>
-                Laboratoire Paul Painlevé, Université de Lille<br>
-                La salle Kampé de Feriet, Bâtiment M2<br>
-            </p>
-        </section>
+    <section>
+      <h2 id="schedule-title">Schedule</h2>
+      <ul id="schedule">
+        <li><strong>Session 1:</strong> Introduction to local epsilon factors — 12 Sept 2025</li>
+        <li><strong>Session 2:</strong> Global epsilon factors — 19 Sept 2025</li>
+        <li><strong>Session 3:</strong> Functional equations and L-functions — 26 Sept 2025</li>
+      </ul>
+    </section>
 
-        <section class="notes">
-            <h2>Notes & Resources</h2>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </section>
-    </main>
+    <section>
+      <h2 id="location-title">Location</h2>
+      <p id="location">Room 301, Institut de Mathématiques, Paris</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Epsilon Factors Reading Group </p>
-    </footer>
+    <section>
+      <h2 id="notes-title">Notes & Resources</h2>
+      <ul id="notes">
+        <li><a href="#">Lecture Notes</a></li>
+        <li><a href="#">Recommended References</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const translations = {
+      en: {
+        title: "Epsilon Factors Reading Group",
+        desc: "Exploring epsilon factors, local constants, and their role in number theory.",
+        scheduleTitle: "Schedule",
+        schedule: [
+          "Session 1: Introduction to local epsilon factors — 12 Sept 2025",
+          "Session 2: Global epsilon factors — 19 Sept 2025",
+          "Session 3: Functional equations and L-functions — 26 Sept 2025"
+        ],
+        locationTitle: "Location",
+        location: "Room 301, Institut de Mathématiques, Paris",
+        notesTitle: "Notes & Resources",
+        notes: ["Lecture Notes", "Recommended References"]
+      },
+      fr: {
+        title: "Groupe de Lecture sur les Facteurs Epsilon",
+        desc: "Exploration des facteurs epsilon, des constantes locales et de leur rôle en théorie des nombres.",
+        scheduleTitle: "Calendrier",
+        schedule: [
+          "Séance 1 : Introduction aux facteurs epsilon locaux — 12 Sept 2025",
+          "Séance 2 : Facteurs epsilon globaux — 19 Sept 2025",
+          "Séance 3 : Équations fonctionnelles et fonctions L — 26 Sept 2025"
+        ],
+        locationTitle: "Lieu",
+        location: "Salle 301, Institut de Mathématiques, Paris",
+        notesTitle: "Notes et Ressources",
+        notes: ["Notes de cours", "Références recommandées"]
+      }
+    };
+
+    let currentLang = "en";
+
+    const switcher = document.getElementById("lang-switcher");
+    const title = document.getElementById("title");
+    const desc = document.getElementById("desc");
+    const scheduleTitle = document.getElementById("schedule-title");
+    const schedule = document.getElementById("schedule");
+    const locationTitle = document.getElementById("location-title");
+    const location = document.getElementById("location");
+    const notesTitle = document.getElementById("notes-title");
+    const notes = document.getElementById("notes");
+
+    function updateLanguage(lang) {
+      const t = translations[lang];
+      title.textContent = t.title;
+      desc.textContent = t.desc;
+      scheduleTitle.textContent = t.scheduleTitle;
+      schedule.innerHTML = t.schedule.map(s => `<li>${s}</li>`).join("");
+      locationTitle.textContent = t.locationTitle;
+      location.textContent = t.location;
+      notesTitle.textContent = t.notesTitle;
+      notes.innerHTML = t.notes.map(n => `<li><a href="#">${n}</a></li>`).join("");
+      switcher.textContent = lang === "en" ? "FR" : "EN";
+    }
+
+    switcher.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "fr" : "en";
+      updateLanguage(currentLang);
+    });
+
+    updateLanguage(currentLang);
+  </script>
 </body>
 </html>
