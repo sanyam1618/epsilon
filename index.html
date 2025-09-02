@@ -7,153 +7,151 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
     }
+
     header {
-      background-color: #2d3e50;
+      background-color: #1e3a8a;
       color: white;
-      padding: 15px;
-      text-align: center;
-      position: relative;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    #lang-switcher {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      background: white;
-      border: none;
+
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    #lang-select {
       padding: 5px;
       border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
+      border: none;
+      font-size: 0.9rem;
     }
+
     main {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
       padding: 20px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
     }
-    h1, h2 {
-      color: #2d3e50;
+
+    section {
+      background: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      padding: 8px 0;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+
+    h2 {
+      color: #1e3a8a;
     }
   </style>
 </head>
 <body>
   <header>
     <h1 id="title">Epsilon Factors Reading Group</h1>
-    <button id="lang-switcher">FR</button>
+    <select id="lang-select">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+    </select>
   </header>
 
   <main>
     <section>
-      <h2 id="desc">Exploring epsilon factors, local constants, and their role in number theory.</h2>
+      <h2 id="about-title">About</h2>
+      <p id="about-text">
+        Welcome to the reading group on epsilon factors. We explore local and global aspects.
+      </p>
     </section>
 
     <section>
       <h2 id="schedule-title">Schedule</h2>
-      <ul id="schedule">
-        <li><strong>Session 1:</strong> Introduction to local epsilon factors — 12 Sept 2025</li>
-        <li><strong>Session 2:</strong> Global epsilon factors — 19 Sept 2025</li>
-        <li><strong>Session 3:</strong> Functional equations and L-functions — 26 Sept 2025</li>
+      <ul id="schedule-list">
+        <li>Session 1 — Introduction — Jan 10</li>
+        <li>Session 2 — Local epsilon factors — Jan 17</li>
+        <li>Session 3 — Global theory — Jan 24</li>
       </ul>
     </section>
 
     <section>
       <h2 id="location-title">Location</h2>
-      <p id="location">Room 301, Institut de Mathématiques, Paris</p>
+      <p id="location-text">Room 302, Mathematics Department, Paris.</p>
     </section>
 
     <section>
       <h2 id="notes-title">Notes & Resources</h2>
-      <ul id="notes">
-        <li><a href="#">Lecture Notes</a></li>
-        <li><a href="#">Recommended References</a></li>
-      </ul>
+      <p id="notes-text">
+        Lecture notes and slides will be uploaded here.
+      </p>
     </section>
   </main>
 
   <script>
+    // Translation content
     const translations = {
       en: {
         title: "Epsilon Factors Reading Group",
-        desc: "Exploring epsilon factors, local constants, and their role in number theory.",
+        aboutTitle: "About",
+        aboutText: "Welcome to the reading group on epsilon factors. We explore local and global aspects.",
         scheduleTitle: "Schedule",
-        schedule: [
-          "Session 1: Introduction to local epsilon factors — 12 Sept 2025",
-          "Session 2: Global epsilon factors — 19 Sept 2025",
-          "Session 3: Functional equations and L-functions — 26 Sept 2025"
-        ],
+        scheduleList: `
+          <li>Session 1 — Introduction — Jan 10</li>
+          <li>Session 2 — Local epsilon factors — Jan 17</li>
+          <li>Session 3 — Global theory — Jan 24</li>
+        `,
         locationTitle: "Location",
-        location: "Room 301, Institut de Mathématiques, Paris",
+        locationText: "Room 302, Mathematics Department, Paris.",
         notesTitle: "Notes & Resources",
-        notes: ["Lecture Notes", "Recommended References"]
+        notesText: "Lecture notes and slides will be uploaded here."
       },
       fr: {
-        title: "Groupe de Lecture sur les Facteurs Epsilon",
-        desc: "Exploration des facteurs epsilon, des constantes locales et de leur rôle en théorie des nombres.",
+        title: "Groupe de Lecture sur les Facteurs Épsilon",
+        aboutTitle: "À propos",
+        aboutText: "Bienvenue au groupe de lecture sur les facteurs epsilon. Nous explorons les aspects locaux et globaux.",
         scheduleTitle: "Calendrier",
-        schedule: [
-          "Séance 1 : Introduction aux facteurs epsilon locaux — 12 Sept 2025",
-          "Séance 2 : Facteurs epsilon globaux — 19 Sept 2025",
-          "Séance 3 : Équations fonctionnelles et fonctions L — 26 Sept 2025"
-        ],
+        scheduleList: `
+          <li>Séance 1 — Introduction — 10 Jan</li>
+          <li>Séance 2 — Facteurs epsilon locaux — 17 Jan</li>
+          <li>Séance 3 — Théorie globale — 24 Jan</li>
+        `,
         locationTitle: "Lieu",
-        location: "Salle 301, Institut de Mathématiques, Paris",
-        notesTitle: "Notes et Ressources",
-        notes: ["Notes de cours", "Références recommandées"]
+        locationText: "Salle 302, Département de Mathématiques, Paris.",
+        notesTitle: "Notes & Ressources",
+        notesText: "Les notes de cours et les diapositives seront mises en ligne ici."
       }
     };
 
-    let currentLang = "en";
-
-    const switcher = document.getElementById("lang-switcher");
-    const title = document.getElementById("title");
-    const desc = document.getElementById("desc");
-    const scheduleTitle = document.getElementById("schedule-title");
-    const schedule = document.getElementById("schedule");
-    const locationTitle = document.getElementById("location-title");
-    const location = document.getElementById("location");
-    const notesTitle = document.getElementById("notes-title");
-    const notes = document.getElementById("notes");
+    const langSelect = document.getElementById("lang-select");
 
     function updateLanguage(lang) {
-      const t = translations[lang];
-      title.textContent = t.title;
-      desc.textContent = t.desc;
-      scheduleTitle.textContent = t.scheduleTitle;
-      schedule.innerHTML = t.schedule.map(s => `<li>${s}</li>`).join("");
-      locationTitle.textContent = t.locationTitle;
-      location.textContent = t.location;
-      notesTitle.textContent = t.notesTitle;
-      notes.innerHTML = t.notes.map(n => `<li><a href="#">${n}</a></li>`).join("");
-      switcher.textContent = lang === "en" ? "FR" : "EN";
+      document.getElementById("title").textContent = translations[lang].title;
+      document.getElementById("about-title").textContent = translations[lang].aboutTitle;
+      document.getElementById("about-text").textContent = translations[lang].aboutText;
+      document.getElementById("schedule-title").textContent = translations[lang].scheduleTitle;
+      document.getElementById("schedule-list").innerHTML = translations[lang].scheduleList;
+      document.getElementById("location-title").textContent = translations[lang].locationTitle;
+      document.getElementById("location-text").textContent = translations[lang].locationText;
+      document.getElementById("notes-title").textContent = translations[lang].notesTitle;
+      document.getElementById("notes-text").textContent = translations[lang].notesText;
+
+      localStorage.setItem("selectedLang", lang);
     }
 
-    switcher.addEventListener("click", () => {
-      currentLang = currentLang === "en" ? "fr" : "en";
-      updateLanguage(currentLang);
+    // On language change
+    langSelect.addEventListener("change", (e) => {
+      updateLanguage(e.target.value);
     });
 
-    updateLanguage(currentLang);
+    // Load saved language or default English
+    const savedLang = localStorage.getItem("selectedLang") || "en";
+    langSelect.value = savedLang;
+    updateLanguage(savedLang);
   </script>
 </body>
 </html>
