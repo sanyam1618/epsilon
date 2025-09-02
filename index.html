@@ -1,35 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Notes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Factors Reading Group</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
             color: #2c3e50;
         }
-        a {
-            text-decoration: none;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f1f1;
+        }
+        .notes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .notes li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
             color: white;
-            background-color: #3498db;
-            padding: 10px 20px;
-            border-radius: 5px;
+            margin-top: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
         }
         a:hover {
-            background-color: #2980b9;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Epsilon Factors Reading Group</h1>
+        <p>Exploring local and global epsilon factors, Weil representations, and their applications</p>
+    </header>
 
-    <h1>Download My Notes</h1>
-    <p>Click the button below to download my PDF notes:</p>
-    <a href="https://github.com/sanyam1618/m4th/main/Thesis-4.pdf" target="_blank">Download PDF</a>
+    <main>
+        <section>
+            <h2>📅 Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Speaker</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>September 10, 2025</td>
+                        <td>Introduction to Local Epsilon Factors</td>
+                        <td>Dr. Alice Martin</td>
+                        <td><a href="#">PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>September 17, 2025</td>
+                        <td>Weil Representations and Gauss Sums</td>
+                        <td>Prof. John Smith</td>
+                        <td><a href="#">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>September 24, 2025</td>
+                        <td>Global Theory of Epsilon Factors</td>
+                        <td>Dr. Sanyam Gupta</td>
+                        <td><a href="#">Notes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section>
+            <h2>📍 Venue</h2>
+            <p>
+                Department of Mathematics, Université Paris-Saclay<br>
+                Room 3.14, Building 307<br>
+                91405 Orsay, France
+            </p>
+        </section>
+
+        <section class="notes">
+            <h2>📚 Notes & Resources</h2>
+            <ul>
+                <li><a href="#">Lecture Notes on Local Constants</a></li>
+                <li><a href="#">Casselman’s Notes on Weil Representations</a></li>
+                <li><a href="#">Deligne’s Article on Epsilon Factors</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Epsilon Factors Reading Group | Maintained by Sanyam Gupta</p>
+    </footer>
 </body>
 </html>
