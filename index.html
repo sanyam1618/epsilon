@@ -47,33 +47,61 @@
       padding-left: 8px;
     }
 
-    .pdf-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 1rem 0;
+    /* Table styling */
+    .table-container {
+      overflow-x: auto;
+      margin-top: 1rem;
     }
 
-    .pdf-list li {
-      margin: 0.6rem 0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
       background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead {
+      background-color: #004085;
+      color: white;
+    }
+
+    th, td {
       padding: 0.8rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f5ff;
+    }
+
+    /* References list */
+    .ref-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .ref-list li {
+      margin-bottom: 20px;
+      background: white;
+      padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .pdf-list li:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    .pdf-list a {
+    .ref-list a {
+      display: inline-block;
+      margin-top: 0.5rem;
       text-decoration: none;
       color: #007BFF;
       font-weight: 500;
+      transition: color 0.2s;
     }
 
-    .pdf-list a:hover {
+    .ref-list a:hover {
+      color: #004085;
       text-decoration: underline;
     }
 
@@ -90,7 +118,7 @@
     <h1>Fall 2025: Epsilon Factors Reading Group</h1>
   </header>
 
-  <main>
+  <main class="container">
     <!-- About section -->
     <section>
       <h2>About</h2>
@@ -117,72 +145,65 @@
               <td>Introduction</td>
               <td>Thu, Sep 11, 2025 — 10:00</td>
               <td>Mladen Dimitrov</td>
-              <td><a href="notes/session1.pdf" class="notes-link">pdf</a></td>
+              <td><a href="notes/session1.pdf" class="notes-link" target="_blank">📄 pdf</a></td>
             </tr>
             <tr>
               <td>Conference: Automorphic forms in Lille</td>
-              <td>Sep 17 - Sep 19, 2025 </td>
+              <td>Sep 17 - Sep 19, 2025</td>
               <td></td>
-              <td><a href="https://www.mathconf.org/antaf2025/" class="notes-link">link</a></td>
+              <td><a href="https://www.mathconf.org/antaf2025/" class="notes-link" target="_blank">🔗 link</a></td>
             </tr>
-          
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Notes and resources -->
-        <!-- References Section -->
+    <!-- References Section -->
     <section>
       <h2>Recommended References</h2>
       <p>
         Here are some key references related to epsilon factors. Click on the links to access the PDFs:
       </p>
 
-      <ul style="list-style-type: none; padding-left: 0;">
-        <!-- Deligne -->
-        <li style="margin-bottom: 20px;">
+      <ul class="ref-list">
+        <li>
           <strong>P. Deligne</strong>, 
           <em>Les constantes des équations fonctionnelles des fonctions L</em>,  
           in <em>Modular functions of one variable, II</em> (Proc. Internat. Summer School, Univ. Antwerp, Antwerp, 1972),  
           Lecture Notes in Math., Vol. 349, Springer, Berlin-New York, 1973, pp. 501–597.  
-          <br />
-          <a href="https://publications.ias.edu/sites/default/files/Number20.pdf" 
-             class="notes-link" target="_blank">📄 Read PDF</a>
+          <br>
+          <a href="https://publications.ias.edu/sites/default/files/Number20.pdf" target="_blank">📄 Read PDF</a>
         </li>
 
-        <!-- Rohrlich -->
-        <li style="margin-bottom: 20px;">
+        <li>
           <strong>David E. Rohrlich</strong>,  
           <em>Galois theory, elliptic curves, and root numbers</em>,  
           Compositio Mathematica, Volume 100 (1996), no. 3, pp. 311–349.  
-          <br />
-          <a href="https://www.numdam.org/item/CM_1996__100_3_311_0/" 
-             class="notes-link" target="_blank">📄 Read PDF</a>
+          <br>
+          <a href="https://www.numdam.org/item/CM_1996__100_3_311_0/" target="_blank">📄 Read PDF</a>
         </li>
 
-        <!-- Fröhlich & Queyrut -->
-        <li style="margin-bottom: 20px;">
+        <li>
           <strong>A. Fröhlich</strong> and <strong>J. Queyrut</strong>,  
           <em>On the functional equation for the Artin L-function for characters of real representations</em>,  
           Invent. Math. 20 (1973), pp. 125–138.  
-          <br />
-          <a href="https://eudml.org/doc/142209" 
-             class="notes-link" target="_blank">📄 Read PDF</a>
+          <br>
+          <a href="https://eudml.org/doc/142209" target="_blank">📄 Read PDF</a>
         </li>
 
-        <!-- Prasad -->
-        <li style="margin-bottom: 20px;">
+        <li>
           <strong>Dipendra Prasad</strong>,  
           <em>Trilinear forms for representations of GL₂ and local epsilon-factors</em>,  
           Compositio Mathematica, Volume 75 (1990), no. 1, pp. 1–46.  
-          <br />
-          <a href="https://www.numdam.org/item/CM_1990__75_1_1_0/" 
-             class="notes-link" target="_blank">📄 Read PDF</a>
+          <br>
+          <a href="https://www.numdam.org/item/CM_1990__75_1_1_0/" target="_blank">📄 Read PDF</a>
         </li>
       </ul>
     </section>
-
   </main>
+
+  <footer>
+    © 2025 Epsilon Factors Reading Group — Université de Lille
+  </footer>
 </body>
 </html>
