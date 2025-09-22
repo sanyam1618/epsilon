@@ -143,8 +143,8 @@
 
 \section{Introduction}
 First and foremost, we offer a general introduction to the notion of
-\emph{$\epsilon$-factors}, hoping that this will also motivate the theme of the
-reading group.  $L$-functions and their associated $\epsilon$-factors form an
+\emph{$\varepsilon$-factors}, hoping that this will also motivate the theme of the
+reading group.  $L$-functions and their associated $\varepsilon$-factors form an
 essential part of the \emph{Langlands program}, a vast network of conjectures
 and theorems that has profoundly influenced modern number theory and
 representation theory.
@@ -262,11 +262,11 @@ Langlands’ idea was to generalize the correspondence
 and then further to arbitrary reductive groups.
 Such correspondences are conjectured to satisfy several key properties:
 \begin{itemize}
-    \item \textbf{Compatibility of $L$- and $\epsilon$-factors:}
+    \item \textbf{Compatibility of $L$- and $\varepsilon$-factors:}
     To every continuous character \(\chi: F^\times \to \mathbb{C}^\times\)
     one attaches local factors
     \[
-    L(s,\chi), \qquad \epsilon(s,\chi,\psi),
+    L(s,\chi), \qquad \varepsilon(s,\chi,\psi),
     \]
     as established in Tate's thesis for \(\mathrm{GL}_1\).
     Via local class field theory, $\chi$ corresponds to a 
@@ -276,12 +276,12 @@ Such correspondences are conjectured to satisfy several key properties:
     \]
     and representation theory of $\mathcal{W}_F$ defines local factors
     \[
-    L(s,\rho_\chi), \qquad \epsilon(s,\rho_\chi,\psi).
+    L(s,\rho_\chi), \qquad \varepsilon(s,\rho_\chi,\psi).
     \]
     Local class field theory asserts that
     \[
     L(s,\chi) = L(s,\rho_\chi), \qquad 
-    \epsilon(s,\chi,\psi) = \epsilon(s,\rho_\chi,\psi),
+    \varepsilon(s,\chi,\psi) = \varepsilon(s,\rho_\chi,\psi),
     \]
     providing perfect compatibility of local constants in the case 
     \(n = 1\). This property is required to hold in general for the 
@@ -308,20 +308,20 @@ the two sides of the conjectural correspondence are:
  
 \bigskip
 
-\subsection{Historical Development of $L$- and $\epsilon$-Factors}
+\subsection{Historical Development of $L$- and $\varepsilon$-Factors}
 
 The study of local factors has its roots in the work of Riemann and 
 Dedekind on zeta functions of number fields. 
 Tate's thesis (1950) gave a uniform, adelic definition of $L$-functions 
 for characters of $\mathrm{GL}_1$ and established their analytic continuation 
-and functional equation, introducing the local $\epsilon$-factors in the process.
+and functional equation, introducing the local $\varepsilon$-factors in the process.
 
 Building on Tate’s work, Langlands introduced local factors for 
 $\mathrm{GL}_n$ in the late 1960s, using his theory of Eisenstein series 
 and the global-to-local functional equation. 
 Subsequently, Deligne formulated a general theory of local constants 
 for representations of the Weil group, providing a representation-theoretic 
-foundation and proving that Tate’s $\epsilon$-factors coincide with those 
+foundation and proving that Tate’s $\varepsilon$-factors coincide with those 
 coming from Galois representations under local class field theory.
 
 Today, the equality of local factors on both the Galois and automorphic sides 
@@ -336,34 +336,39 @@ is one of the cornerstones of the local Langlands correspondence.
 
 Having provided the general background and motivation, 
 the first main aim of this reading group is to develop the 
-machinery of $L$-functions and $\epsilon$-factors attached to 
+machinery of $L$-functions and $\varepsilon$-factors attached to 
 finite-dimensional, semisimple, smooth representations of 
 \(\mathcal{W}_F\).
 
 \section{Structure of the reading group}
 \subsection{Talk 2 (September 25): Fourier analysis on Local field and Gauss Sums}
+The aim of this talk is to get us familiarised by the functional equation for smooth representations of $\Gl_1(F)$, where $F$ is non-archimdean local field. 
 \begin{itemize}
     \item Give the definition of Local fields $F$ and additive/multiplicative characters of local fields following \cite[\S 1.1 - 1.4, \S 1.6-1.8]{BH06}. Give a crash course on Haar measures on locally profinite groups following \cite[\S 3.1-3.4]{BH06} including $(F,+)$ and $(F^\times,\cdot)$ as explicit examples.
     
     \item Introduce the local zeta integrals for $\Gl_1(F)$ and prove the corresponding functional equation as in the theorem in \cite[\S 23.1-23.2]{BH06}. Cover the rest of the material in section 23 till \cite[\S 23.4]{BH06}.
 
-    \item Following \cite[\S 23.5-23.7]{BH06} computation of $\epsilon$-factors leading to Theorem in \S 23.5 and relation to Gauss sums in \cite[\S 23.6]{BH06}.
+    \item Following \cite[\S 23.5-23.7]{BH06} computation of $\varepsilon$-factors leading to Theorem in \S 23.5 and relation to Gauss sums in \cite[\S 23.6]{BH06}.
     
 \end{itemize}
 
 \subsection{Talk 3 (October 02): Archimedean Weil-Deligne Representations}
-In this talk, we will study the Archimedean components of the Langlands correspondence, focusing on the Weil-Deligne representations associated with real and complex places. We will explore their construction, properties, and the role they play in the local Langlands correspondence.
+In this talk, we will will deal with the arhimedean analogue of the previous talk and study the Archimedean components of the Langlands correspondence, focusing on the Weil-Deligne representations associated with real and complex places.
+    \begin{itemize}
+        \item Introduce local zeta integral for $\R$ and $\C$ i.e., the archimedean part of theorem \cite[Ch 7, Thm 7.2]{RV99}. Give explicit $\varepsilon$-factors. 
+        \item Give the definitions of Weil group for $\R$ and $\C$. 
+    \end{itemize}
 
-\subsection{Talk 4 : Representations of the Weil group I}
+\subsection{Talk 4 : Non-Archimedean Weil-Deligne Representations I}
 This talk addresses the Galois side of the Langlands correspondence, namely representations
 of the Weil group $\mathcal{W}_F$ ($F$ is local non-archimedean). We study their first properties and define the local Artin L-functions
 associated with them.
 \begin{itemize}
     \item Recall the facts about Galois theory contained in \cite[\S 28.1-28.3]{BH06}.
-    \item Define the Weil group WF and discuss its first properties (\cite[\S 28.4-28.5]{BH06}).
+    \item Define the Weil group $\mathcal{W}_F$ and discuss its first properties (\cite[\S 28.4-28.5]{BH06}).
     \item Give the first results concerning the $\C$-valued representations of $\mathcal{W}_F$ contained in \cite[\S 28.6-28.7]{BH06} including the proofs if time permits.
     \item Recall quickly the statements of local class field theory \cite[\S 29.1]{BH06}
-    \item Following \cite[\S 29.2-29.4]{BH06}, define the local Artin $L$-function associated to finite-dimensional, smooth, semisimple representations of $\mathcal{W}_F$ and state the theorem in \cite[\S 29.4]{BH06} concerning the local constants $\epsilon(\rho,s,\psi)$.
+    \item Following \cite[\S 29.2-29.4]{BH06}, define the local Artin $L$-function associated to finite-dimensional, smooth, semisimple representations of $\mathcal{W}_F$ and state the theorem in \cite[\S 29.4]{BH06} concerning the local constants $\varepsilon(\rho,s,\psi)$.
 \end{itemize}
 
 
@@ -371,7 +376,7 @@ associated with them.
 
 % \section{Big Picture and Motivation}
 
-% \subsection{Local constants or $\epsilon$-factors}
+% \subsection{Local constants or $\varepsilon$-factors}
 
 % Let $\chi$ be a Hecke character.  
 % To $\chi$ we attach its completed $L$-function
@@ -384,17 +389,17 @@ associated with them.
 % to the entire complex plane and satisfies the functional equation
 % \[
 %    \Lambda(1-s,\chi) \;=\;
-%    \epsilon(\chi)\,\Lambda\bigl(s,\overline{\chi}\bigr),
+%    \varepsilon(\chi)\,\Lambda\bigl(s,\overline{\chi}\bigr),
 % \]
-% where $\epsilon(\chi)$ is a complex number of absolute value~$1$.
+% where $\varepsilon(\chi)$ is a complex number of absolute value~$1$.
 % This number is called the \emph{root number} or the
-% \emph{$\epsilon$-factor}.  
+% \emph{$\varepsilon$-factor}.  
 
 % \medskip
-% The factor $\epsilon(\chi)$ enjoys striking arithmetic properties.
+% The factor $\varepsilon(\chi)$ enjoys striking arithmetic properties.
 % For example, if $\chi$ is a Dirichlet character of conductor $f$, then
 % \[
-%    \epsilon(\chi)
+%    \varepsilon(\chi)
 %    \;=\;
 %    \frac{\tau(\chi)}{\sqrt{\pm f}},
 % \]
@@ -405,9 +410,9 @@ associated with them.
 % An important consequence of Tate's description of the global functional
 % equation as a product of local functional equations is the factorization
 % \[
-%    \epsilon(\chi) \;=\; \prod_{v} \epsilon\bigl(\chi_v\bigr),
+%    \varepsilon(\chi) \;=\; \prod_{v} \varepsilon\bigl(\chi_v\bigr),
 % \]
-% where the $\epsilon(\chi_v)$ are explicit local root numbers.
+% where the $\varepsilon(\chi_v)$ are explicit local root numbers.
 
 % \medskip
 % Langlands conjectured that a similar factorization should hold for
@@ -421,19 +426,19 @@ associated with them.
 % \medskip
 % Deligne's paper \cite{Del73} develops a precise and canonical theory of
 % these \emph{local constants} (also called the
-% \emph{Langlands--Deligne local $\epsilon$-factors} or simply
+% \emph{Langlands--Deligne local $\varepsilon$-factors} or simply
 % \emph{root numbers}) that appear in the functional equations of
 % Artin and Weil $L$-functions.
 % He proves that for any finite-dimensional complex
 % (or $\ell$-adic/Weil) representation $\rho$ of the global Weil group,
 % the global constant in the functional equation factors as
 % \[
-%    \epsilon(\rho) \;=\; \prod_{v} \epsilon_v\bigl(\rho_v\bigr),
+%    \varepsilon(\rho) \;=\; \prod_{v} \varepsilon_v\bigl(\rho_v\bigr),
 % \]
 % a product of local constants over all places~$v$.
 
 % Deligne establishes the fundamental properties of these local
-% $\epsilon$-factors—multiplicativity, functoriality under induction,
+% $\varepsilon$-factors—multiplicativity, functoriality under induction,
 % and the precise dependence on additive characters and Haar measures—
 % by an axiomatic construction that also proves uniqueness.
 % He further shows how to pass from the case of $1$-dimensional characters
@@ -446,7 +451,7 @@ associated with them.
 % to a ``mod~$\ell$'' setting:  
 % for any non-archimedean local field $K$ of residue characteristic $p$
 % and for every field $F$ of characteristic $\ell \neq p$,
-% the $\epsilon$-factor theory carries over to Weil representations over~$F$.
+% the $\varepsilon$-factor theory carries over to Weil representations over~$F$.
 % Both the complex and the mod-$\ell$ theories have since become fundamental
 % tools, notably in the study of the \emph{local Langlands correspondence}.
 
@@ -457,7 +462,7 @@ associated with them.
 % \section{Preliminaries}
 % This section is a brief overview of the background needed. 
 % \subsection{Local fields and Weil groups}
-% For each place $v$ of a global field $K$ (number field or function field) we have the local field $K_v$. The Weil group $W_{K_v}$ (or Weil–Deligne group when needed) is the natural local Galois/Weil object whose finite-dimensional complex representations are the objects whose $L$- and $\epsilon$-factors we want to define. (Deligne formulates things both in terms of Galois/Weil representations and in $\ell$-adic cohomology for function fields.)
+% For each place $v$ of a global field $K$ (number field or function field) we have the local field $K_v$. The Weil group $W_{K_v}$ (or Weil–Deligne group when needed) is the natural local Galois/Weil object whose finite-dimensional complex representations are the objects whose $L$- and $\varepsilon$-factors we want to define. (Deligne formulates things both in terms of Galois/Weil representations and in $\ell$-adic cohomology for function fields.)
 
 
 
@@ -467,7 +472,7 @@ associated with them.
 % For a finite-dimensional representation $\rho$ of $W_{K_v}$ there are standard definitions of a local $L$-factor $L_v(\rho, s)$ (an Euler factor), and an integer conductor $N(\rho_v)$ measuring ramification. These are the same notions appearing in Artin $L$-functions; at unramified places $L_v$ is the inverse of a characteristic polynomial of Frobenius. (Tate’s treatment gives the $\Gl(1)$ local theory; Deligne builds from that.)
 
 % \subsection{Additive character and Haar measure dependence}
-% Local $\epsilon$-factors depend on the choice of a nontrivial additive character $\psi_v : K_v \to \C^\times$ and on a Haar measure $dx_v$. Deligne carefully records this dependence and gives normalization rules. Changing $\psi_v$ or $dx_v$ alters $\epsilon$ by an explicit elementary factor (power of the local modulus etc.). This dependence is essential and unavoidable.
+% Local $\varepsilon$-factors depend on the choice of a nontrivial additive character $\psi_v : K_v \to \C^\times$ and on a Haar measure $dx_v$. Deligne carefully records this dependence and gives normalization rules. Changing $\psi_v$ or $dx_v$ alters $\varepsilon$ by an explicit elementary factor (power of the local modulus etc.). This dependence is essential and unavoidable.
 
 
 % \subsection{Global $L(\rho, s)$ and functional equation}
@@ -477,57 +482,57 @@ associated with them.
 % \]
 % converging in some right half-plane. One expects a functional equation of the form
 % \[
-% L(\rho, s) = \epsilon(\rho, s) \, L(\rho^\vee, 1 - s),
+% L(\rho, s) = \varepsilon(\rho, s) \, L(\rho^\vee, 1 - s),
 % \]
-% where $\rho^\vee$ is the dual representation and $\epsilon(\rho, s)$ is a global (entire) factor. Deligne’s result is that $\epsilon(\rho, s)$ factors as a product of local $\epsilon_v(\rho_v, s)$ (with specified $s$-dependence), and he defines those local factors canonically.
+% where $\rho^\vee$ is the dual representation and $\varepsilon(\rho, s)$ is a global (entire) factor. Deligne’s result is that $\varepsilon(\rho, s)$ factors as a product of local $\varepsilon_v(\rho_v, s)$ (with specified $s$-dependence), and he defines those local factors canonically.
 
 % \section{Statements of the Main results}
 
-% \subsection{Existence and uniqueness of local $\epsilon$-factors (axiomatic)}
+% \subsection{Existence and uniqueness of local $\varepsilon$-factors (axiomatic)}
 % There is a unique assignment which to every local field $K_v$, every nontrivial additive character $\psi_v$, every Haar measure $dx_v$, and every finite-dimensional complex (or $\ell$-adic/Weil) representation $\rho_v$ associates a meromorphic function
-% $\epsilon_v(\rho_v, \psi_v, dx_v, s)$ (in practice a monomial factor times a root of unity times a power of $q_v^{-s}$ in the non-archimedean case, etc.) satisfying a short list of natural axioms:
+% $\varepsilon_v(\rho_v, \psi_v, dx_v, s)$ (in practice a monomial factor times a root of unity times a power of $q_v^{-s}$ in the non-archimedean case, etc.) satisfying a short list of natural axioms:
 
 % \begin{enumerate}
-%     \item Multiplicativity in exact sequences: if $0 \to \rho' \to \rho \to \rho'' \to 0$ then $\epsilon(\rho)=\epsilon(\rho')\cdot\epsilon(\rho'')$.
-%     \item Compatibility with Tate's 1-dimensional local $\epsilon$-factors: for 1-dimensional characters this agrees with the classical (Tate) local $\epsilon$ from his thesis (explicit Gauss sums, archimedean factors).
-%     \item Behavior under induction: $\epsilon(\mathrm{Ind}_{L/K} \sigma)$ is expressed in terms of $\epsilon(\sigma)$ and known explicit local constants (this property is critical in passing from 1-dimensional objects to arbitrary representations via Brauer induction).
-%     \item Normalization for unramified representations: for an unramified representation $\rho_v$ the $\epsilon$-factor is the standard elementary factor (often equal to 1 at the normalization point).
+%     \item Multiplicativity in exact sequences: if $0 \to \rho' \to \rho \to \rho'' \to 0$ then $\varepsilon(\rho)=\varepsilon(\rho')\cdot\varepsilon(\rho'')$.
+%     \item Compatibility with Tate's 1-dimensional local $\varepsilon$-factors: for 1-dimensional characters this agrees with the classical (Tate) local $\varepsilon$ from his thesis (explicit Gauss sums, archimedean factors).
+%     \item Behavior under induction: $\varepsilon(\mathrm{Ind}_{L/K} \sigma)$ is expressed in terms of $\varepsilon(\sigma)$ and known explicit local constants (this property is critical in passing from 1-dimensional objects to arbitrary representations via Brauer induction).
+%     \item Normalization for unramified representations: for an unramified representation $\rho_v$ the $\varepsilon$-factor is the standard elementary factor (often equal to 1 at the normalization point).
 % \end{enumerate}
 
-% Deligne proves that this axiomatic package determines $\epsilon$ uniquely and that such an assignment exists.
+% Deligne proves that this axiomatic package determines $\varepsilon$ uniquely and that such an assignment exists.
 
 % \subsection{Global factorization}
-% Given a global representation $\rho$ (Artin or Weil), choose for each place $v$ compatible $\psi_v$ and $dx_v$ coming from a global choice; then the global $\epsilon$-factor equals the product of local ones:
+% Given a global representation $\rho$ (Artin or Weil), choose for each place $v$ compatible $\psi_v$ and $dx_v$ coming from a global choice; then the global $\varepsilon$-factor equals the product of local ones:
 % \[
-% \epsilon(\rho, s) = \prod_v \epsilon_v(\rho_v, \psi_v, dx_v, s).
+% \varepsilon(\rho, s) = \prod_v \varepsilon_v(\rho_v, \psi_v, dx_v, s).
 % \]
 % This realizes the constant in the global functional equation as the product of the local constants. Historically this was a theorem of Langlands (Deligne gives a simple proof; Dwork had proved it “up to sign”), and Deligne's contribution is to give a transparent, canonical local theory and a clear route from Tate’s local 1-dimensional theory to the general case.
 
 % \section{Main ingredients of the Proofs}
 
 % \subsection{Start point: Tate's local theory for $\Gl(1)$}     
-% Tate's thesis provides local functional equations and explicit $\epsilon$-factors for $1$-dimensional characters (quasicharacters) of $K_v^\times$, constructed via local zeta integrals (Schwartz–Bruhat functions, Fourier transforms) and depending on $\psi_v$ and $dx_v$. These local $\epsilon$'s are essentially Gauss sums when the character is ramified, and explicit archimedean $\Gamma$-factors for the real/complex places. This is the \emph{seed} from which everything else is built.
+% Tate's thesis provides local functional equations and explicit $\varepsilon$-factors for $1$-dimensional characters (quasicharacters) of $K_v^\times$, constructed via local zeta integrals (Schwartz–Bruhat functions, Fourier transforms) and depending on $\psi_v$ and $dx_v$. These local $\varepsilon$'s are essentially Gauss sums when the character is ramified, and explicit archimedean $\Gamma$-factors for the real/complex places. This is the \emph{seed} from which everything else is built.
 
 % \subsection{Brauer (or Langlands/Brauer) induction — reduce to $1$-dimensional} 
-% Brauer's induction theorem (or more representation-theoretic induction tricks) allows one to write any finite-dimensional complex representation of the global Galois/Weil group as a $\Z$-linear combination of representations induced from characters of subgroups. Concretely, one reduces questions about arbitrary $\rho$ to the 1-dimensional case on finite extensions, plus bookkeeping about induction. The crucial property needed of local $\epsilon$-factors is a compatibility with induction so that the known 1-dimensional factors glue correctly. Deligne gives an argument along these lines, implementing Langlands' theorem (proved earlier up to sign by Dwork) that global $\epsilon$ factors split as products of local ones.
+% Brauer's induction theorem (or more representation-theoretic induction tricks) allows one to write any finite-dimensional complex representation of the global Galois/Weil group as a $\Z$-linear combination of representations induced from characters of subgroups. Concretely, one reduces questions about arbitrary $\rho$ to the 1-dimensional case on finite extensions, plus bookkeeping about induction. The crucial property needed of local $\varepsilon$-factors is a compatibility with induction so that the known 1-dimensional factors glue correctly. Deligne gives an argument along these lines, implementing Langlands' theorem (proved earlier up to sign by Dwork) that global $\varepsilon$ factors split as products of local ones.
 
 % \subsection{Axiomatic local theory + uniqueness}
 
-% Deligne sets up the axioms listed earlier for local $\epsilon$-factors, then proves uniqueness of any system satisfying them. Uniqueness is typically proved by reducing to 1-dimensional characters via exact sequences and induction relations: once you fix the 1-dimensional (Tate) factors and require multiplicativity and induction compatibility, everything else is forced.
+% Deligne sets up the axioms listed earlier for local $\varepsilon$-factors, then proves uniqueness of any system satisfying them. Uniqueness is typically proved by reducing to 1-dimensional characters via exact sequences and induction relations: once you fix the 1-dimensional (Tate) factors and require multiplicativity and induction compatibility, everything else is forced.
 
-% \subsection{Existence: construction of $\epsilon$ for all representations}
-% For existence (number field case) Deligne uses Brauer induction + Tate local factors + explicit rules for how induction changes $\epsilon$ to define $\epsilon$ for any representation and check the axioms. This is the classical number-field route (it uses local class field theory/Tate integrals as the base case).
+% \subsection{Existence: construction of $\varepsilon$ for all representations}
+% For existence (number field case) Deligne uses Brauer induction + Tate local factors + explicit rules for how induction changes $\varepsilon$ to define $\varepsilon$ for any representation and check the axioms. This is the classical number-field route (it uses local class field theory/Tate integrals as the base case).
 
 % \subsection{Normalization and dependence checks}
-% Deligne carefully checks how $\epsilon$ changes when you change $\psi_v$ (replace $\psi$ by $\psi_a(x)=\psi(ax)$) or rescale the Haar measure; this feeds into the global product formula (choice of global additive character yields consistent local choices so that the product formula works). He also records archimedean behaviors (Gamma factors and powers of $i$) and shows the whole package is compatible with known functional equations (Artin L-functions, Hecke L-series in GL(1), etc.).
+% Deligne carefully checks how $\varepsilon$ changes when you change $\psi_v$ (replace $\psi$ by $\psi_a(x)=\psi(ax)$) or rescale the Haar measure; this feeds into the global product formula (choice of global additive character yields consistent local choices so that the product formula works). He also records archimedean behaviors (Gamma factors and powers of $i$) and shows the whole package is compatible with known functional equations (Artin L-functions, Hecke L-series in GL(1), etc.).
 
 % \section{Strategy}
 % \subsection{Extend from Characters to General Representations}
 % Deligne uses two key tools:
 % \begin{itemize}
-%     \item Multiplicativity in exact sequences: If $$0 \to \rho_v' \to \rho_v \to \rho_v'' \to 0$$ is exact, then $$\epsilon_v(\rho_v) = \epsilon_v(\rho_v') \epsilon_v(\rho_v'').$$
-%     This allows defining $\epsilon_v$ on semisimple representations and extending linearly to virtual representations in the Grothendieck group $K_0(W_{K_v})$.
-%     \item Compatibility with induction: If $L/K$ is a finite separable extension and $\sigma$ a representation of $W_L$, then \[ \epsilon_K(\text{Ind}_{L/K} \sigma, \psi_K, dx_K, s) = \lambda(L/K, \psi_K, dx_K)^{\dim \sigma} \, \epsilon_L(\sigma, \psi_L, dx_L, s). \]
+%     \item Multiplicativity in exact sequences: If $$0 \to \rho_v' \to \rho_v \to \rho_v'' \to 0$$ is exact, then $$\varepsilon_v(\rho_v) = \varepsilon_v(\rho_v') \varepsilon_v(\rho_v'').$$
+%     This allows defining $\varepsilon_v$ on semisimple representations and extending linearly to virtual representations in the Grothendieck group $K_0(W_{K_v})$.
+%     \item Compatibility with induction: If $L/K$ is a finite separable extension and $\sigma$ a representation of $W_L$, then \[ \varepsilon_K(\text{Ind}_{L/K} \sigma, \psi_K, dx_K, s) = \lambda(L/K, \psi_K, dx_K)^{\dim \sigma} \, \varepsilon_L(\sigma, \psi_L, dx_L, s). \]
 %     The constant $\lambda(L/K, \psi_K, dx_K)$ is explicit and depends only on $L/K$ and the choices of $\psi_K$ and $dx_K$. This property is crucial for extending from 1-dimensional characters to all representations via Brauer induction.
 % \end{itemize}
 
@@ -535,7 +540,7 @@ associated with them.
 
 
 % \subsection{Reduce to Representations with Finite Image}
-% Deligne first handles representations with finite image (Artin representations). He writes any such representation as a virtual linear combination of induced characters from finite-index subgroups (Brauer's induction theorem). Since $\epsilon$ is known for characters, he uses the induction formula to define $\epsilon$ for the induced representations, and then multiplicativity to pass to arbitrary virtual combinations. This defines $\epsilon_v$ for all Artin representations and proves that the definition is independent of the chosen Brauer decomposition.
+% Deligne first handles representations with finite image (Artin representations). He writes any such representation as a virtual linear combination of induced characters from finite-index subgroups (Brauer's induction theorem). Since $\varepsilon$ is known for characters, he uses the induction formula to define $\varepsilon$ for the induced representations, and then multiplicativity to pass to arbitrary virtual combinations. This defines $\varepsilon_v$ for all Artin representations and proves that the definition is independent of the chosen Brauer decomposition.
 
 % \subsection{Local $\lambda$-Factors}
 % The main technical ingredient is the definition and properties of $$\lambda(L/K, \psi, dx).$$ Deligne gives:
