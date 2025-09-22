@@ -1,8 +1,8 @@
-PWD /Users/sanyam/Documents/GitHub/epsilon
+PWD /Users/sanyam/Documents/GitHub/epsilon/handout
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/sanyam/Documents/GitHub/epsilon/epsilon.tex
+INPUT /Users/sanyam/Documents/GitHub/epsilon/handout/epsilon.tex
 OUTPUT epsilon.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amscls/amsart.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amscls/amsart.cls
