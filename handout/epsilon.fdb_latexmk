@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex epsilon"] 1758575047.17433 "epsilon.aux" "epsilon.bbl" "epsilon" 1758575050.6017 0
-  "./references.bib" 1758575002.83178 2323 64f794431ca9efa68c73e54e6d847b8e ""
+["bibtex epsilon"] 1758575047.17433 "epsilon.aux" "epsilon.bbl" "epsilon" 1758630989.19329 0
+  "./references.bib" 1758630898.83773 2323 64f794431ca9efa68c73e54e6d847b8e ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/amscls/amsplain.bst" 1513722769 25798 9b3546f2f237ee0ce4724eed95f954f4 ""
-  "epsilon.aux" 1758575049.71916 2977 ddbdf7732d35068ef2fa68b5d702a321 "pdflatex"
+  "epsilon.aux" 1758630988.91782 3275 47b21f02515e82c06140505f9881e05f "pdflatex"
   (generated)
   "epsilon.bbl"
   "epsilon.blg"
   (rewritten before read)
-["pdflatex"] 1758575047.43526 "/Users/sanyam/Documents/GitHub/epsilon/handout/epsilon.tex" "epsilon.pdf" "epsilon" 1758575050.60203 0
-  "/Users/sanyam/Documents/GitHub/epsilon/handout/epsilon.tex" 1758575031.58379 28506 adf5099b8f3190b755695fe96347f8d0 ""
+["pdflatex"] 1758630988.0261 "/Users/sanyam/mathematics /GitHub/epsilon/handout/epsilon.tex" "epsilon.pdf" "epsilon" 1758630989.19343 0
+  "/Users/sanyam/mathematics /GitHub/epsilon/handout/epsilon.tex" 1758630987.52088 29723 789a368d684132031774833de7526623 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -237,11 +237,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1753798522 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1753798421 3345740 1c893cf7bbccd581366060557a71c383 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "epsilon.aux" 1758575049.71916 2977 ddbdf7732d35068ef2fa68b5d702a321 "pdflatex"
-  "epsilon.bbl" 1758575047.42616 726 b85ba4c285e974b4a3b4c0713e358908 "bibtex epsilon"
-  "epsilon.out" 1758575049.7222 438 0b28b2f6e33db0a90a61b89d4e2a0757 "pdflatex"
-  "epsilon.tex" 1758575031.58379 28506 adf5099b8f3190b755695fe96347f8d0 ""
-  "epsilon.toc" 1758575049.72328 1461 8f3a641c171ccb7f1478d7af410fd534 "pdflatex"
+  "epsilon.aux" 1758630988.91782 3275 47b21f02515e82c06140505f9881e05f "pdflatex"
+  "epsilon.bbl" 1758630898.83446 726 b85ba4c285e974b4a3b4c0713e358908 "bibtex epsilon"
+  "epsilon.out" 1758630988.9186 438 0b28b2f6e33db0a90a61b89d4e2a0757 "pdflatex"
+  "epsilon.tex" 1758630987.52088 29723 789a368d684132031774833de7526623 ""
+  "epsilon.toc" 1758630988.91881 1590 52da98b47178e215d49525da4776ba7c "pdflatex"
   (generated)
   "epsilon.aux"
   "epsilon.log"
