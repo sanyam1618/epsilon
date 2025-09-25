@@ -1,0 +1,241 @@
+\documentclass[11pt]{amsart}
+
+% ------------------------------------------------------------
+% Encoding and Language
+% ------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+% \usepackage[OT2, T1]{fontenc}
+
+% ------------------------------------------------------------
+% Page Layout and Spacing
+% ------------------------------------------------------------
+\usepackage[a4paper,margin=1in]{geometry} % Adjust margins here
+\usepackage{setspace}
+\setcounter{tocdepth}{1}
+
+% ------------------------------------------------------------
+% Fonts and Symbols
+% ------------------------------------------------------------
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{physics}
+\usepackage{csquotes}
+
+% ------------------------------------------------------------
+% Math Packages
+% ------------------------------------------------------------
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{commath}
+\usepackage{tikz-cd}
+
+% ------------------------------------------------------------
+% Theorem Environments
+% ------------------------------------------------------------
+\usepackage{thmtools}
+\newtheorem{thm}{Theorem}
+\newtheorem{conj}{Conjecture}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conv}{Convention}
+\newtheorem{fact}{Fact}
+\newtheorem{defn}{Definition}
+\newtheorem{que}{Question}
+\newtheorem{eg}{Example}[section]
+\newtheorem*{remark}{Remark}
+\newtheorem*{remarks}{Remarks}
+\newtheorem{note}{Note}
+
+% ------------------------------------------------------------
+% Color and Boxes
+% ------------------------------------------------------------
+\usepackage[dvipsnames,x11names]{xcolor} % to allow more named colors
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins,breakable}
+\usepackage{framed}
+
+% ------------------------------------------------------------
+% Graphics and Layout
+% ------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{fancyhdr}
+
+% ------------------------------------------------------------
+% Links and URLs
+% ------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=MidnightBlue,
+    citecolor=ForestGreen,
+    urlcolor=RoyalBlue
+}
+\usepackage{url}
+
+% ------------------------------------------------------------
+% Subfiles and Modularity
+% ------------------------------------------------------------
+\usepackage{subfiles}
+\usepackage{environ}
+\usepackage{epigraph}
+% Math Operators
+% ------------------------------------------------------------
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Gl}{GL}
+\DeclareMathOperator{\Sl}{SL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\GO}{GO}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Fr}{Frac}
+\DeclareMathOperator{\Ms}{\textit{Meas}}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\Mp}{Mp}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\ur}{ur}
+\DeclareMathOperator{\Nm}{N}
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\Rep}{Rep}
+\DeclareMathOperator{\rec}{rec}
+\newcommand{\Upd}{\operatorname{U}^{\mathrm{M}}}
+
+% ------------------------------------------------------------
+% Common Shortcuts
+% ------------------------------------------------------------
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\h}{\mathbb{H}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\p}{\mathbb{P}}
+
+% ------------------------------------------------------------
+% Document Metadata
+% ------------------------------------------------------------
+\newcommand{\subtitle}[1]{%
+  \posttitle{\par\large#1\par\medskip}
+}
+
+\title{First talk}
+\author{by Ivan}
+\date{June 25, 2025}
+
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% ------------------------------------------------------------
+% Begin Document
+% ------------------------------------------------------------
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Locally Profinite Groups}
+
+\begin{defn}
+A topological group $G$ is called \textit{locally profinite} if it is Hausdorff, locally compact, totally disconnected and has a basis of neighborhoods of the identity consisting of open compact subgroups.
+\end{defn}
+
+Equivalently, A locally profinite group is a topological group $G$ such that
+every open neighbourhood of the identity in $G$ contains a compact open subgroup of $G$. In fact, we can write
+\[
+G = \projlim_{K} G/K
+\]
+where the limit runs over all open normal subgroups $K$ of $G$.
+
+
+\begin{defn}
+    A local field $F$ is a topological, Hausdorff, locally compact and non-discrete field.
+\end{defn}
+If $(F,\abs{\cdot})$ is a valued field, then we say that it is archimedean if the absolute value $\abs{\cdot}$ is archimedean, i.e., if for every $x,y \in F$ with $\abs{x} < \abs{y}$, there exists an integer $n$ such that $\abs{nx} > \abs{y}$. Otherwise, we say that $(F,\abs{\cdot})$ is non-archimedean.
+
+We say that $F$ is a non-archimedean local field if the topology on $F$ is induced by a non-archimedean absolute value. Examples of non-archimedean local fields are finite extensions of $\Q_p$ and $\F_q((t))$. Examples of archimedean local fields are $\R$ and $\C$. 
+
+Let $F$ be a non-Archimedean local field. Thus $F$ is the field of fractions of a discrete valuation ring $\mathcal{O}$. Let $\mathfrak{p}$ be the maximal ideal of $\mathcal{O}$ and $k= \mathcal{O}/\mathfrak{p}$ the residue class field. We will always assume that $k$ is finite, and we will generally denote the cardinality $|k|$ by $q$.
+
+
+Let $\pi$ be a prime element of $F$, that is, an element satisfying
+\[
+\pi \mathcal{O} = \mathfrak{p},
+\]
+where $\mathfrak{p}$ is the maximal ideal of the ring of integers $\mathcal{O}$ of $F$.
+Every element $x \in F^\times$ admits a unique factorization
+\[
+x = u \pi^n,
+\]
+with $u \in \mathcal{O}^\times = U_F$ a unit and $n \in \mathbb{Z}$.
+We write $n = \nu_F(x)$ for the normalized valuation of $x$.
+
+The field $F$ carries the absolute value
+\[
+\lVert x \rVert = q^{-n} = q^{-\nu_F(x)},
+\]
+where $q = \lvert \mathcal{O}/\mathfrak{p} \rvert$.
+We set $\lVert 0 \rVert = 0$, so that $\lVert x \rVert > 0$ for $x \neq 0$.
+This absolute value defines a metric under which $F$ is complete, making $F$ a topological field.
+
+For each $n \in \mathbb{Z}$, the fractional ideal
+\[
+\mathfrak{p}^n
+   = \pi^n \mathcal{O}
+   = \{x \in F : \lVert x \rVert \le q^{-n}\}
+\]
+is an open additive subgroup of $F$, and the collection $\{\mathfrak{p}^n\}_{n \in \mathbb{Z}}$
+forms a fundamental system of neighborhoods of $0$.
+
+Because $F$ is complete and the residue field $k = \mathcal{O}/\mathfrak{p}$ is finite,
+the canonical map
+\[
+\mathcal{O} \;\longrightarrow\; \varprojlim_{n} \mathcal{O}/\mathfrak{p}^n
+\]
+is a topological isomorphism.
+Each quotient $\mathcal{O}/\mathfrak{p}^n$ is finite, hence the inverse limit is compact.
+Moreover, each fractional ideal $\mathfrak{p}^n$ is topologically isomorphic to $\mathcal{O}$
+and is therefore compact.
+It follows that the additive group $(F,+)$ is \emph{locally profinite},
+and $F$ is the union of its compact open subgroups.
+
+The same reasoning shows that the multiplicative group $F^\times$ is locally profinite.
+Standard arguments then imply that for every $n \ge 1$, the groups
+\[
+F^n,\quad M_n(F),\quad \mathrm{GL}_n(F),\quad
+\mathrm{SL}_n(F),\quad
+\mathrm{SO}_n(F),\quad
+\mathrm{GO}_n(F),\quad
+\mathrm{Mp}_n(F)
+\]
+are all locally profinite as well.
+
+
+\section{Characters of Locally Profinite Groups}
+
+\begin{defn}
+    Let $G$ be a locally profinite group. A character of $G$ is a continuous homomorphism $\chi: G \to \mathbb{C}^\times$. We say that a character is unitary if its image lies in the unit circle $S^1 \subset \mathbb{C}^\times$.
+\end{defn}
+
+For a local field $F$ we write $\hat{F}$ for the group of unitary characters of the additive group $(F,+)$. 
+
+
+\cite{BH06}
+
+
+
+
+\nocite{}
+\bibliographystyle{amsplain}
+\bibliography{references.bib}
+
+\end{document}
