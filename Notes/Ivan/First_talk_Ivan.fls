@@ -1,8 +1,8 @@
-PWD /Users/sanyam/mathematics /GitHub/epsilon/handout
+PWD /Users/sanyam/mathematics /GitHub/epsilon/Notes/Ivan
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/sanyam/mathematics /GitHub/epsilon/handout/First_talk_Ivan.tex
+INPUT /Users/sanyam/mathematics /GitHub/epsilon/Notes/Ivan/First_talk_Ivan.tex
 OUTPUT First_talk_Ivan.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amscls/amsart.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amscls/amsart.cls

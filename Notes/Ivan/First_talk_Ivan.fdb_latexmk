@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex First_talk_Ivan"] 1758787664.07699 "First_talk_Ivan.aux" "First_talk_Ivan.bbl" "First_talk_Ivan" 1758787687.31635 0
+["bibtex First_talk_Ivan"] 1758787664.07699 "First_talk_Ivan.aux" "First_talk_Ivan.bbl" "First_talk_Ivan" 1758808828.09031 0
   "./references.bib" 1758630898.83773 2323 64f794431ca9efa68c73e54e6d847b8e ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/amscls/amsplain.bst" 1513722769 25798 9b3546f2f237ee0ce4724eed95f954f4 ""
-  "First_talk_Ivan.aux" 1758787686.84643 1339 8cf247b8d91fbd26d725be28a86d6c6a "pdflatex"
+  "First_talk_Ivan.aux" 1758808827.68157 1339 8cf247b8d91fbd26d725be28a86d6c6a "pdflatex"
   (generated)
   "First_talk_Ivan.bbl"
   "First_talk_Ivan.blg"
   (rewritten before read)
-["pdflatex"] 1758787685.42909 "/Users/sanyam/mathematics /GitHub/epsilon/handout/First_talk_Ivan.tex" "First_talk_Ivan.pdf" "First_talk_Ivan" 1758787687.31661 0
-  "/Users/sanyam/mathematics /GitHub/epsilon/handout/First_talk_Ivan.tex" 1758787684.85463 8376 59f0f10c677cb2d8fa23cb9a56f0d1de ""
+["pdflatex"] 1758808826.09907 "/Users/sanyam/mathematics /GitHub/epsilon/Notes/Ivan/First_talk_Ivan.tex" "First_talk_Ivan.pdf" "First_talk_Ivan" 1758808828.09051 0
+  "/Users/sanyam/mathematics /GitHub/epsilon/Notes/Ivan/First_talk_Ivan.tex" 1758808825.71595 8476 55cec2c0e3975f4b2f6f4ebb60eae6c5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -236,11 +236,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1753798522 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1753798421 3345740 1c893cf7bbccd581366060557a71c383 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "First_talk_Ivan.aux" 1758787686.84643 1339 8cf247b8d91fbd26d725be28a86d6c6a "pdflatex"
+  "First_talk_Ivan.aux" 1758808827.68157 1339 8cf247b8d91fbd26d725be28a86d6c6a "pdflatex"
   "First_talk_Ivan.bbl" 1758787664.22288 599 9e4924835ff4151a3b4b93d35f428f21 "bibtex First_talk_Ivan"
-  "First_talk_Ivan.out" 1758787686.8474 544 07c2ed0b3dd17ca397642a679af6469d "pdflatex"
-  "First_talk_Ivan.tex" 1758787684.85463 8376 59f0f10c677cb2d8fa23cb9a56f0d1de ""
-  "First_talk_Ivan.toc" 1758787686.84773 282 46114ded545eefe5e912ed1d2bc342cb "pdflatex"
+  "First_talk_Ivan.out" 1758808827.6825 544 07c2ed0b3dd17ca397642a679af6469d "pdflatex"
+  "First_talk_Ivan.tex" 1758808825.71595 8476 55cec2c0e3975f4b2f6f4ebb60eae6c5 ""
+  "First_talk_Ivan.toc" 1758808827.68282 282 46114ded545eefe5e912ed1d2bc342cb "pdflatex"
   (generated)
   "First_talk_Ivan.aux"
   "First_talk_Ivan.log"
